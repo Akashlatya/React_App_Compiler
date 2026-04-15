@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Options</title>
+    <style>
+        body {
+            background-color: #1a1a2e;
+            color: #fff;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        .icon-grid {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1000px;
+        }
+
+        .icon-card {
+            background: #16213e;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            width: 150px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .icon-card:hover {
+            transform: scale(1.05);
+            border-color: #a8c0ff;
+        }
+
+        svg {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 15px;
+            stroke: url(#commonGradient);
+            stroke-width: 2;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .label {
+            font-size: 0.9rem;
+            color: #a8c0ff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Choose an Icon</h1>
+
+    <!-- Shared Gradient -->
+    <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+        <defs>
+            <linearGradient id="commonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#a8c0ff" />
+                <stop offset="100%" stop-color="#3f2b96" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <div class="icon-grid">
+        <!-- Option 1: Classic Cycle -->
+        <div class="icon-card">
+            <svg viewBox="0 0 24 24">
+                <path d="M21 2v6h-6"></path>
+                <path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path>
+                <path d="M3 22v-6h6"></path>
+                <path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path>
+            </svg>
+            <div class="label">Option 1<br>(Classic)</div>
+        </div>
+
+        <!-- Option 2: Hex Sync -->
+        <div class="icon-card">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2l9 4.9V17L12 22l-9-4.9V7z" />
+                <path d="M12 22V12" />
+                <path d="M12 12L3 7" />
+                <path d="M12 12l9-5" />
+                <circle cx="12" cy="12" r="3" stroke="url(#commonGradient)" fill="none" />
+            </svg>
+            <div class="label">Option 2<br>(Hex Node)</div>
+        </div>
+
+        <!-- Option 3: Infinity Sync -->
+        <div class="icon-card">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 12c-2-2.5-4-4-7-4s-5 2-5 5 2 5 5 5 5-2.5 7-6" />
+                <path d="M12 12c2 2.5 4 4 7 4s5-2 5-5-2-5-5-5-5 2.5-7 6" />
+                <path d="M19 8l3-3-3-3" />
+                <path d="M5 16l-3 3 3 3" />
+            </svg>
+            <div class="label">Option 3<br>(Infinity)</div>
+        </div>
+
+        <!-- Option 4: Code Brackets -->
+        <div class="icon-card">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M4 16v3a2 2 0 0 0 2 2h3" />
+                <path d="M10 9l-2 3 2 3" />
+                <path d="M14 9l2 3-2 3" />
+            </svg>
+            <div class="label">Option 4<br>(Code Frame)</div>
+        </div>
+
+        <!-- Option 5: Abstract Vortex -->
+        <div class="icon-card">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2l3 6 6 3-6 3-3 6-3-6-6-3 6-3z" />
+                <circle cx="12" cy="12" r="4" />
+            </svg>
+            <div class="label">Option 5<br>(Star/Spark)</div>
+        </div>
+
+        <!-- Option 6: Cloud Sync -->
+        <div class="icon-card">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M17.5 19c0-1.7-1.3-3-3-3h-1.1c-.2-1.3-1.4-2.4-2.9-2.4-1.2 0-2.3.8-2.7 1.9H7c-1.7 0-3 1.3-3 3s1.3 3 3 3h10.5c1.7 0 3-1.3 3-3z" />
+                <path d="M12 4v4m0 0l-3-3m3 3l3-3" />
+                <path d="M12 10a5 5 0 0 1 5 5" />
+                <path d="M7 15a5 5 0 0 1 5-5" />
+            </svg>
+            <div class="label">Option 6<br>(Cloud Sync)</div>
+        </div>
+
+        <!-- Option 7: Abstract Loop -->
+        <div class="icon-card">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2z" opacity="0.5"
+                    stroke-dasharray="4 4" />
+                <path d="M12 6v6l4 2" />
+                <circle cx="12" cy="12" r="1" />
+            </svg>
+            <div class="label">Option 7<br>(Clock/Time)</div>
+        </div>
+
+        <!-- Option 8: Arrows & Dots -->
+        <div class="icon-card">
+            <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="3" r="2" />
+                <circle cx="21" cy="12" r="2" />
+                <circle cx="12" cy="21" r="2" />
+                <circle cx="3" cy="12" r="2" />
+                <path d="M12 5v14" />
+                <path d="M5 12h14" />
+                <circle cx="12" cy="12" r="3" />
+            </svg>
+            <div class="label">Option 8<br>(Network)</div>
+        </div>
+
+        <!-- Option 9: Shield Sync -->
+        <div class="icon-card">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <path d="M12 8v8" />
+                <path d="M8 12h8" />
+            </svg>
+            <div class="label">Option 9<br>(Shield)</div>
+        </div>
+
+        <!-- Option 10: Pulse Sync -->
+        <div class="icon-card">
+            <svg viewBox="0 0 24 24">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" opacity="0.3" />
+            </svg>
+            <div class="label">Option 10<br>(Pulse/Heartbeat)</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+{
+  "name": "compiler",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://www.ogcompiler.com/",
+  "scripts": {
+    "dev": "vite",
+    "start": "serve -s dist -l 3000",
+    "build": "tsc -b && vite build",
+    "build:analyze": "tsc -b && vite build && echo Bundle analysis saved to dist/stats.html",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "framer-motion": "^12.23.24",
+    "i18next": "^25.7.2",
+    "i18next-browser-languagedetector": "^8.2.0",
+    "lucide-react": "^0.469.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "react-i18next": "^16.5.0",
+    "react-router-dom": "^7.9.6",
+    "serve": "^14.2.5",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "rollup-plugin-visualizer": "^6.0.5",
+    "sharp": "^0.34.5",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vite": "^7.2.4",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-pwa": "^1.2.0",
+    "workbox-window": "^7.4.0"
+  },
+  "overrides": {
+    "sourcemap-codec": "npm:@jridgewell/sourcemap-codec@^1.4.15",
+    "rollup-plugin-visualizer": {
+      "source-map": "^0.7.4"
+    }
+  }
+}

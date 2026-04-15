@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#d946ef" />
+    </linearGradient>
+  </defs>
+  <!-- Main Hexagon Shape -->
+  <path d="M256 24 L464 136 L464 376 L256 488 L48 376 L48 136 Z" 
+        fill="none" 
+        stroke="url(#logoGradient)" 
+        stroke-width="32" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+  <!-- Left Curly Brace { -->
+  <path d="M220 150 C180 150 170 170 170 200 V235 C170 250 150 256 150 256 C150 256 170 262 170 277 V312 C170 342 180 362 220 362" 
+        fill="none" 
+        stroke="url(#logoGradient)" 
+        stroke-width="28" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+  <!-- Right Curly Brace } -->
+  <path d="M292 150 C332 150 342 170 342 200 V235 C342 250 362 256 362 256 C362 256 342 262 342 277 V312 C342 342 332 362 292 362" 
+        fill="none" 
+        stroke="url(#logoGradient)" 
+        stroke-width="28" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+</svg>
